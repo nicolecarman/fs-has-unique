@@ -13,6 +13,7 @@ returns true
 */
 
 
+
 // Write your code below
 function hasUniqueChars(word) {
     let uniqueChars = new Set();
@@ -23,3 +24,26 @@ function hasUniqueChars(word) {
 
     return uniqueChars.size === word.length;
 }
+
+
+
+/*
+
+Alternatively:
+
+function hasUniqueChars(word) {
+    let uniqueChars = new Set(word);
+    return uniqueChars.size === word.length;
+}
+
+
+-OR-
+
+
+if (uniqueChars.size === word.length) {
+    return true;
+} else {
+    return false;
+}
+
+*/
